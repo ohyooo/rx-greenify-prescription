@@ -1,10 +1,27 @@
-<prescription xmlns="http://greenify.github.io/schemas/prescription/v3"
-  type="activity"
-  sender="any"
-  package="com.netease.cloudmusic"
-  class="com.netease.cloudmusic.activity.RedirectActivity">
-  <intent-filter>
-    <action name="android.intent.action.VIEW" />
-    <cat name="android.intent.category.BROWSABLE" />
-  </intent-filter>
-</prescription>
+<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
+    <prescription type="activity" sender="other">
+        <intent-filter>
+            <action name="android.intent.action.VIEW" />
+            <scheme name="market" />
+            <ssp prefix="//details?id=com.taobao.taobao" />
+        </intent-filter>
+        <intent-filter>
+            <action name="android.intent.action.VIEW" />
+            <scheme name="http" />
+            <ssp sglob="//market.android.com/.*com.taobao.taobao.*" />
+        </intent-filter>
+    </prescription>
+<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
+    <prescription type="activity" sender="other">
+        <intent-filter>
+            <action name="android.intent.action.VIEW" />
+            <scheme name="market" />
+            <ssp prefix="//details?id=com.tmall.wireless" />
+        </intent-filter>
+        <intent-filter>
+            <action name="android.intent.action.VIEW" />
+            <scheme name="http" />
+            <ssp sglob="//market.android.com/.*com.tmall.wireless.*" />
+        </intent-filter>
+    </prescription>
+</prescriptions>
