@@ -23,10 +23,11 @@
             <ssp sglob="//market.android.com/.*com.tmall.wireless.*" />
         </intent-filter>
     </prescription>
-    <prescription type="activity" sender="other" package="com.netease.cloudmusic" class="com.netease.cloudmusic.activity.RedirectActivity">
+    <prescription type="activity" sender="other" package="com.netease.cloudmusic">
         <intent-filter>
             <action name="android.intent.action.VIEW" />
             <category name="android.intent.category.BROWSABLE" />
+            <scheme name="htt.*" />
         </intent-filter>
     </prescription>
 </prescriptions>
