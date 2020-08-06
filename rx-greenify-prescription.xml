@@ -11,7 +11,6 @@
             <ssp sglob="//market.android.com/.*com.taobao.taobao.*" />
         </intent-filter>
     </prescription>
-<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
     <prescription type="activity" sender="other">
         <intent-filter>
             <action name="android.intent.action.VIEW" />
@@ -22,6 +21,12 @@
             <action name="android.intent.action.VIEW" />
             <scheme name="http" />
             <ssp sglob="//market.android.com/.*com.tmall.wireless.*" />
+        </intent-filter>
+    </prescription>
+    <prescription type="activity" sender="other" package="com.netease.cloudmusic" class="com.netease.cloudmusic.activity.RedirectActivity">
+        <intent-filter>
+            <action name="android.intent.action.VIEW" />
+            <category name="android.intent.category.BROWSABLE" />
         </intent-filter>
     </prescription>
 </prescriptions>
