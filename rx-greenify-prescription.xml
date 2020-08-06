@@ -28,6 +28,7 @@
             <action name="android.intent.action.VIEW" />
             <category name="android.intent.category.BROWSABLE" />
             <scheme name="https" />
+            <scheme name="http" />
         </intent-filter>
     </prescription>
 </prescriptions>
