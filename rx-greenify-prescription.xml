@@ -3,24 +3,24 @@
         <intent-filter>
             <action name="android.intent.action.VIEW" />
             <scheme name="market" />
-            <ssp prefix="//details?id=com.taobao.taobao" />
+            <ssp prefix="//details?id=com.taobao" />
         </intent-filter>
         <intent-filter>
             <action name="android.intent.action.VIEW" />
             <scheme name="http" />
-            <ssp sglob="//market.android.com/.*com.taobao.taobao.*" />
+            <ssp sglob="//market.android.com/.*com.taobao.*" />
         </intent-filter>
     </prescription>
     <prescription type="activity" sender="other">
         <intent-filter>
             <action name="android.intent.action.VIEW" />
             <scheme name="market" />
-            <ssp prefix="//details?id=com.tmall.wireless" />
+            <ssp prefix="//details?id=com.tmall" />
         </intent-filter>
         <intent-filter>
             <action name="android.intent.action.VIEW" />
             <scheme name="http" />
-            <ssp sglob="//market.android.com/.*com.tmall.wireless.*" />
+            <ssp sglob="//market.android.com/.*com.tmall.*" />
         </intent-filter>
     </prescription>
     <prescription type="activity" sender="other" package="com.netease.cloudmusic">
